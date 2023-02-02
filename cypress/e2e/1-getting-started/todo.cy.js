@@ -140,4 +140,16 @@ describe('example to-do app', () => {
       cy.contains('Clear completed').should('not.exist')
     })
   })
+
+  /* ==== Test Created with Cypress Studio ==== */
+  it('weno', function() {
+    /* ==== Generated with Cypress Studio ==== */
+    cy.get('[data-test="new-todo"]').clear('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+    cy.get('[data-test="new-todo"]').type('aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+    cy.get('[data-id="1675327719871"] > .view > .destroy').click();
+    cy.get('[data-id="1675327719872"] > .view > .destroy').click();
+    cy.get('.view > label').click();
+    cy.get('.view > label').click();
+    /* ==== End Cypress Studio ==== */
+  });
 })
