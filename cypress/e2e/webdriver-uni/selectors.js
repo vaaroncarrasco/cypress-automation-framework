@@ -27,7 +27,7 @@ describe('selectors', () => {
     cy.xpath("//input[@name='first_name']")
 
     // cy.contains('button', 'Submit').click()
-    cy.get("button[title=Submit").click()
+    cy.get("button[title=Submit]").click()
   })
 
 })
